@@ -1,0 +1,32 @@
+technoforte-inji-deployment/
+│
+├── config/
+│   ├── global.env
+│   ├── modules.env
+│   └── environments/
+│       ├── dev.env
+│       ├── qa.env
+│       └── prod.env
+│
+├── scripts/
+│   ├── deploy-all.sh
+│   ├── prerequisites.sh
+│   ├── clone-repositories.sh
+│   ├── build-all.sh
+│   ├── push-images.sh
+│   ├── deploy-certify.sh
+│   ├── deploy-mimoto.sh
+│   ├── deploy-web.sh
+│   ├── deploy-verify.sh
+│   ├── verify-deployment.sh
+│   └── rollback.sh
+│
+├── values/
+│   ├── certify-values.yaml
+│   ├── mimoto-values.yaml
+│   ├── web-values.yaml
+│   └── verify-values.yaml
+│
+└── .github/
+    └── workflows/
+        └── deploy-all.yml
